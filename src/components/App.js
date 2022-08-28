@@ -33,9 +33,9 @@ function App() {
       .getInitialCards()
       .then((cardsList) => {
         setCards(cardsList);
-      }, [])
-      .catch((err) => console.log(err));;
-  });
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   function handleCardLike(card) {
     // Проверяем, есть ли уже лайк на этой карточке
